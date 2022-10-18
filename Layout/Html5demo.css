@@ -1,0 +1,64 @@
+*
+  
+  body {
+    margin: 0px auto;
+    max-width: 1000px;
+  }
+  
+  
+  header {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color:firebrick;
+  }
+  
+  
+  nav {
+    display: block;
+    width: 25%;
+    float: left;
+    background-color: blueviolet;
+  }
+  
+  
+  nav a:link {
+    display: block;
+    height: 15px;
+    padding: 10px;
+    padding-left: 10px ;
+  }
+  
+  article {
+    display: block;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  
+  section {
+    float:left;
+    width: 50%;
+    display: block;
+    background-color: coral;
+  }
+  aside{
+      display: block;
+      width: 20%;
+      float: right;
+      padding: 10px;
+      font-size: 12px;
+  }
+  
+  footer {
+    clear:both;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    background-color: cadetblue;
+  }
+  #content-holder {
+      background-color: green;
+  }
+  
+  
