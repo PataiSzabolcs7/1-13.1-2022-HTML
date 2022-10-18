@@ -1,0 +1,22 @@
+{
+		"Saját html snippet":{
+			"prefix": "HTML-Hu",
+			"body":[
+		    "<!DOCTYPE html>",
+		    "<html lang=\"hu\">",
+		        "<head>",
+		            "   <meta name=\"Author\" content=\"Patai Szabolcs\">",
+    	            "   <meta charset=\"UTF-8\">",
+		            "   <meta name=\"keyword\" content=\"$2\">",
+		            "   <meta name=\"description\" content=\"$4\">",
+    	            "   <title>1$</title>",
+		        "</head>",
+			    "<body>",
+				    "   <h1>5$</h1>",
+			    "</body>",
+			"</html>"
+			],
+			"description": "Saját HTML 5 váz",
+		}
+
+}
