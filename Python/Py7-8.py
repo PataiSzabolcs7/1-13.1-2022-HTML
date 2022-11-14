@@ -1,0 +1,23 @@
+import turtle
+kép = turtle.Screen()
+Kalóz = turtle.Turtle()
+a = 100
+Kalóz.forward(a)
+Kalóz.right(160)
+Kalóz.forward(a)
+Kalóz.left(43)
+Kalóz.forward(a)
+Kalóz.right(270)
+Kalóz.forward(a)
+Kalóz.left(97)
+Kalóz.forward(a)
+Kalóz.left(43)
+Kalóz.forward(a)
+Kalóz.right(200)
+Kalóz.forward(a)
+Kalóz.right(940)
+Kalóz.forward(a)
+Kalóz.left(17)
+print("Ebbe az irányba néz a Kalóz:",Kalóz)
+
+kép.mainloop()
