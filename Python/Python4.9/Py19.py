@@ -17,6 +17,6 @@ for x in range(5):
     Sanyi.right(144)
     Sanyi.pendown()
 
-
+# Ha nem emeli fel a tollat akkor egy nagy csillagot csinálnak
 pentagrama(Sanyi)
 kép.mainloop()
