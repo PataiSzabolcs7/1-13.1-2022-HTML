@@ -12,6 +12,7 @@ def abszolut_ertek(n):
     elif n > 0:
         return n
 #1 Feladat
+print("1.feladat")
 n=input("Írj be egy égtáj rövidítését:")
 def fordulj_orjarasi_iranyaba(sky):
     if sky=="É":
@@ -32,34 +33,35 @@ def fordulj_orjarasi_iranyaba(sky):
 teszt(fordulj_orjarasi_iranyaba(n)== n or fordulj_orjarasi_iranyaba(n)!=n)
 
 #2 Feladat
+print("2.feladat")
 a = int(input("Írj be egy számot 0-6-ig:"))
 def nap_nev(a):
     if a == 0:
         a = "Hétfő"
-        print("Hétfői Nap")
+        print("Hétfő")
         return a
     elif a == 1:
         a = "Kedd"
-        print("Keddi Nap")
+        print("Kedd")
         return a
     elif a == 2:
         a = "Szerda"
-        print("Szerdai Nap")
+        print("Szerda")
         return a
     elif a == 3:
         a = "Csütörtök"
-        print("Csütörtöki Nap")
+        print("Csütörtök")
         return a
     elif a == 4:
         a = "Péntek"
-        print("Pénteki Nap")
+        print("Péntek")
         return a
     elif a == 5:
         a = "Szombat"
-        print("Szombati Nap")
+        print("Szombat")
     elif a == 6:
         a = "Vasárnap"
-        print("Vasárnapi nap")
+        print("Vasárnap")
         return a
 
 if a == 0:
@@ -80,6 +82,7 @@ elif a > 6:
     teszt(nap_nev(a) == None)
 
 #3.Feladat
+print("3.feladat")
 a = (input("Írj be egy Napot!:"))
 def nap_sorszam(a):
     if a == "Hétfő":
@@ -111,8 +114,8 @@ def nap_sorszam(a):
         return a
     elif int:
         return a
-    elif a!= "Hétfő" "Kedd" "Szerda" "Csütörtök" "Péntek" "Szombat" "Vasárnap":
-        return a
+    elif int or a!= "Hétfő" "Kedd" "Szerda" "Csütörtök" "Péntek" "Szombat" "Vasárnap":
+        return None
 
 if a == "Hétfő":
     teszt(nap_sorszam(a) == 0)
@@ -128,14 +131,11 @@ elif a == "Szombat":
     teszt(nap_sorszam(a) == 5)
 elif a == "Vasárnap":
     teszt(nap_sorszam(a) == 6)
-elif a == "Halloween":
-    teszt(nap_sorszam(a) == None)
-elif int:
-    teszt(nap_sorszam(a) == a)
-elif a =="Hétfő" "Kedd" "Szerda" "Csütörtök" "Péntek" "Szombat" "Vasárnap":
-    teszt(nap_sorszam(a) == a)
+elif a == int or a!= "Hétfő" "Kedd" "Szerda" "Csütörtök" "Péntek" "Szombat" "Vasárnap":
+    teszt(nap_sorszam(a) == None )
  
 #4 Feladat
+print("4.feladat")
 z = input("Melyik napot választod?")
 y = int(input("Hány nap múlva mész nyaralni?:"))
 
@@ -157,6 +157,8 @@ elif z == "Vasárnap":
 x = 0
 def napok_hozzaadasa(z,y):
     x = z + y
+    while x>6:
+        x=x-7
     if x == 0:
         x = "Hétfő"
     elif x == 1:
@@ -174,3 +176,139 @@ def napok_hozzaadasa(z,y):
     print(x)
     return z + y == x
 teszt(napok_hozzaadasa(z,y) == x)
+
+#5 Feladat(rossz).
+print("5 feladat(Nincs kész)")
+z = input("Melyik napot választod?")
+y = int(input("Hány nappal vissza akarsz számolni?:"))
+if z == "Hétfő":
+    z = 0
+elif z == "Kedd":
+    z = 1
+elif z == "Szerda":
+    z = 2
+elif z == "Csütörtök":
+    z = 3
+elif z == "Péntek":
+    z = 4
+elif z == "Szombat":
+    z = 5
+elif z == "Vasárnap":
+    z = 6
+
+x = 0
+def napok_hozzaadasa(z,y):
+    x = z - y
+    while x > 6:
+        x=x%7
+    if x == 0:
+        x = "Hétfő"
+    elif x == 1:
+        x = "Kedd"
+    elif x == 2:
+        x = "Szerda"
+    elif x == 3:
+        x = "Csütörtök"
+    elif x == 4:
+        x = "Péntek"
+    elif x == 5:
+        x = "Szombat"
+    elif x == 6:
+        x = "Vasárnap"
+    print(x)
+    return z - y == x
+teszt(napok_hozzaadasa(z,y) == x)
+
+#6.Feladat
+print("6.Feladat")
+q = input("Melyik hónapot választod?")
+def honap_napja(q):
+    if q == "Január":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Február":
+        q = 28
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Március":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Április":
+        q = 30
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Május":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Június":
+        q = 30
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Július":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Agusztus":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Szeptember":
+        q = 30
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "Október":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "November":
+        q = 30
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif q == "December":
+        q = 31
+        print(f"Ez a hónap  ennyi napos:{q} ")
+        return q
+    elif int or q !="Január""Február""Március""Április""Május""Június""Július""Agusztus""Szeptember""Október""November""December":
+        return None
+
+if q == "Január":
+    teszt(honap_napja(q) == 31)
+elif q =="Február":
+    teszt(honap_napja(q) == 28)
+elif q =="Március":
+    teszt(honap_napja(q) == 31)
+elif q =="Április":
+    teszt(honap_napja(q) == 30)
+elif q =="Május":
+    teszt(honap_napja(q) == 31)
+elif q =="Június":
+    teszt(honap_napja(q) == 30)
+elif q =="Július":
+    teszt(honap_napja(q) == 31)
+elif q =="Agusztus":
+    teszt(honap_napja(q) == 31)
+elif q =="Szeptember":
+    teszt(honap_napja(q) == 30)
+elif q =="Október":
+    teszt(honap_napja(q) == 31)
+elif q =="November":
+    teszt(honap_napja(q) == 30)
+elif q =="December":
+    teszt(honap_napja(q) == 31)
+
+#7.feladat
+print("7.Feladat")
+a = int(input("Hány óra? :"))
+b = int(input("Hány Perc? :"))
+c = int(input("Hány Másodperc? :"))
+y = 0
+def masodperc_valtas(a,b,c):
+    a = a*3600
+    b = b*60
+    c = c
+    y = a + b + c
+    print(y)
+teszt(masodperc_valtas(y) == y) 
