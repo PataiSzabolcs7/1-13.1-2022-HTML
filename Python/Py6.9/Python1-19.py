@@ -370,3 +370,45 @@ def atfogo(c,a,b):
     print(c**0.5)
     return 0
 teszt(atfogo(a, b) == c)
+
+#13.Feladat
+print("13.Feladat")
+x1 = int(input("Első szám:"))
+y1 = int(input("Második szám:"))
+x2 = int(input("Harmadik szám:"))
+y2 = int(input("Negyedik szám:"))
+osszeg = 0
+def meredekseg(x1,y1,x2,y2):
+    osszeg = (x1-y1)/(x2-y2)
+    print(osszeg)
+    return 0
+
+teszt(meredekseg(x1,y1,x2,y2) == osszeg)
+
+#14.Feladat
+print("14.Feladat")
+n = int(input("Ajd meg egy számot:"))
+def paros_e(n):
+    while n == int and float:
+        return True
+    if n%2 == 0:
+        return True
+    else:
+        return False
+teszt(paros_e(n) == n)
+
+#15.Feladat
+print("15.Feladat")
+n = int(input("Ajd meg egy számot:"))
+def paratlan_e(n):
+    while n == int and float:
+        return True
+    if n%2 == 0:
+        return False
+    else:
+        return True
+teszt(paros_e(n) == n)
+
+#16.Feladat
+print("16.Feladat")
+
